@@ -12,8 +12,8 @@ Feature: Practice browser navigation
 
   Scenario: Window Commands
     When Get Window name
-    Then Click on New Message Window
-    Then Get all the Windows names
+   Then Get all the Windows names
+   Then Click on New Message Window
     And Close the pop up window
 
  

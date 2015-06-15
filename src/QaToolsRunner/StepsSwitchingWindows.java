@@ -4,6 +4,9 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utils.WebBrowser;
 import cucumber.api.java.en.Given;
@@ -33,9 +36,10 @@ public class StepsSwitchingWindows {
 
 	@Then("^Click on New Message Window$")
 	public void ClickNewMessageWindow() throws Throwable {
-	
-		//Driver.findElement(By.xpath(".//*[@id='content']/p[3]/button")).click();
-		Driver.findElement(By.cssSelector("#content>p>button")).click();
+	WebDriverWait wait = new WebDriverWait(Driver,10) ;
+	WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='content']/p[3]/button")));
+		Driver.findElement(By.xpath(".//*[@id='content']/p[3]/button")).click();
+		//Driver.findElement(By.cssSelector("#content>p>button")).click();
 		
 	}
 

@@ -8,7 +8,9 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @Cucumber.Options(
 		format={"pretty"},
-		features= "src/QaToolsfeatures")
+		features= {"src/QaToolsfeatures"}
+		
+		)
 		
 		
 public class Runner {
