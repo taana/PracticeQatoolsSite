@@ -36,9 +36,9 @@ public class StepsSwitchingWindows {
 
 	@Then("^Click on New Message Window$")
 	public void ClickNewMessageWindow() throws Throwable {
-	WebDriverWait wait = new WebDriverWait(Driver,10) ;
-	WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='content']/p[3]/button")));
-		Driver.findElement(By.xpath(".//*[@id='content']/p[3]/button")).click();
+	//WebDriverWait wait = new WebDriverWait(Driver,10) ;
+	//WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='content']/p[3]/button")));
+		Driver.findElement(By.xpath(".//*[@id='content']/p[4]/button")).click();
 		//Driver.findElement(By.cssSelector("#content>p>button")).click();
 		
 	}

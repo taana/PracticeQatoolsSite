@@ -1,0 +1,13 @@
+<suite name = "selectedtests" >
+<test name="links">
+<classes>
+   <class name="QaToolsRunner.StepDefinitions" />
+       </classes>
+   </test>
+
+   <test name="windows">
+       <classes>
+           <class name="QaToolsRunner.StepsSwitchingWindows" />
+       </classes>
+   </test>
+</suite>
