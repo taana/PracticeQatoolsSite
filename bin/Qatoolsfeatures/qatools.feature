@@ -14,4 +14,4 @@ Feature: Practice
     Then Click on the another link Link Test
     And Close browser
 
-    
+    1
